@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&family=Nova+Square&family=Nunito+Sans:opsz,wght@6..12,200;6..12,300;6..12,400;6..12,500;6..12,600;6..12,700&family=Open+Sans:wght@400;600;700&family=Orbitron:wght@400;500;600;700&family=Roboto+Condensed:wght@300;400;700&family=Varela+Round&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nova Square', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(45deg, #0a0a0a, #3a4452);
+}
+
+.calculator{
+    height: 660px;
+    width: 410px;
+    border: 1px solid #fff;
+    border-radius: 16px;
+    padding: 30px;
+    background: transparent;
+    box-shadow: 0px 0px 30px rgba(0,0,0,0.9);
+    
+}
+
+input{
+    width: 100%;
+    height: 10vh;
+    border: none;
+    padding: 15px;
+    font-size: 30px;
+    text-align: right;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+input::placeholder{
+    color: #fff;
+}
+
+button{
+    height: 65px;
+    width: 65px;
+    margin: 8px;
+    font-size: 20px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: none;
+    box-shadow: 0px 0px 30px rgba(0,0,0,0.9);
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: rgba(128, 128, 128, 0.325);
+}
+
+button:active{
+    background-color: black;
+}
+
+.operator{
+    color: green;
+}
+
+#equals{
+    background-color: orange;
+}
+
+@media screen and (max-width: 450px) {
+    
+    .calculator{
+        height: 550px;
+        width: 350px;
+    }
+    button{
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    
+    .calculator{
+        height: 480px;
+        width: 300px;
+    }
+    button{
+        width: 35px;
+        height: 35px;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    
+    .calculator{
+        height: 450px;
+        width: 280px;
+    }
+    button{
+        width: 33px;
+        height: 33px;
+    }
+}
+
+/* ipad air pro */
+/* @media screen and (max-width: 1030px ) and (max-height: 1370px) {
+    
+    .calculator{
+        height: 500px;
+        width: 280px;
+    }
+    button{
+        width: 33px;
+        height: 33px;
+    }
+} */
