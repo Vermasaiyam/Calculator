@@ -25,6 +25,10 @@ arr.forEach(button => {
                 
                 string = string.replace(LogSubstring, Math.log(FnSubstring));
             }
+            else if (string.indexOf("(") > -1){
+                string = string.replace("(","*");
+                string = string.replace(")","");
+            }
             string = eval(string);
             input.value = string;
         }
