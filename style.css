@@ -30,7 +30,6 @@ body{
 input{
     width: 100%;
     height: 10vh;
-    border: 1px solid #fff;
     padding: 15px;
     font-size: 30px;
     text-align: right;
@@ -108,16 +107,3 @@ button:active{
         height: 33px;
     }
 }
-
-/* ipad air pro */
-/* @media screen and (max-width: 1030px ) and (max-height: 1370px) {
-    
-    .calculator{
-        height: 500px;
-        width: 280px;
-    }
-    button{
-        width: 33px;
-        height: 33px;
-    }
-} */
